@@ -1,9 +1,7 @@
 from stats import word_count
+from stats import read_book
 
-def read_book(title):
-    with open(f"books/{title}.txt") as f:
-        book = f.read()
-    return book
+
 
 def main():
     title = "frankenstein"
