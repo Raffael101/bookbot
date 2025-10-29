@@ -11,7 +11,8 @@ def word_count(title):
 
 
 def main():
-    title = input("Which Book?\n")
+    title = "frankenstein"
+    #title = input("Which Book?\n")
     #read_book(title)
     word_count(title)
 
