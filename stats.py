@@ -11,7 +11,6 @@ def pretty_dict(title):
         else:
             continue
     char_list.sort(reverse=True, key=sort_go)
-    print(char_list)
     return char_list
 
 
@@ -31,12 +30,9 @@ def letter_count(title):
 def word_count(title):
     book = read_book(title)
     word = book.split()
-    print(f"Found {len(word)} total words")
     return word
 
 def read_book(title):
-    with open(f"books/{title}.txt") as f:
+    with open(title) as f:
         book = f.read()
     return book
-
-pretty_dict("frankenstein")
